@@ -1,0 +1,15 @@
+{
+  "_schema": "P17 Knowledge Graph v1.0",
+  "_note": "Generated and maintained by scripts/knowledge_index.py. Do not edit manually.",
+  "generated_at": null,
+  "stats": {
+    "total_nodes": 0,
+    "total_edges": 0,
+    "total_clusters": 0,
+    "avg_connections_per_node": 0,
+    "isolated_nodes": 0
+  },
+  "nodes": [],
+  "edges": [],
+  "clusters": []
+}

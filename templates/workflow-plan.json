@@ -1,0 +1,50 @@
+{
+  "_comment": "Template for runtime/plans/{wf-id}.json — copy and fill in. Remove _comment field.",
+  "schema_version": "1.0",
+  "id": "wf_YYYYMMDD_NNN",
+  "name": "Workflow Name",
+  "created": "YYYY-MM-DDTHH:MM:SSZ",
+  "trigger": "Plain-language description of what the operator asked for",
+  "approved": false,
+  "approved_at": null,
+  "steps": [
+    {
+      "index": 1,
+      "name": "Step name (verb + object)",
+      "skill": "/skill-name",
+      "executor": "PM | Knowledge | Meeting | Strategy | Cognitive",
+      "inputs": {
+        "files": ["path/to/input/file.md"],
+        "context": "Any additional context the skill needs"
+      },
+      "output_path": "path/to/specific/output-file.md",
+      "gate": {
+        "type": "human_approval",
+        "required": true,
+        "message": "Describe what the operator should review before approving continuation"
+      },
+      "depends_on": [],
+      "status": "pending",
+      "retry_limit": 3
+    },
+    {
+      "index": 2,
+      "name": "Step name (verb + object)",
+      "skill": "/skill-name",
+      "executor": "PM | Knowledge | Meeting | Strategy | Cognitive",
+      "inputs": {
+        "files": ["path/to/output-file-from-step-1.md"],
+        "context": "Any additional context"
+      },
+      "output_path": "path/to/specific/output-file-2.md",
+      "gate": {
+        "type": "human_approval",
+        "required": true,
+        "message": "Describe what the operator should review"
+      },
+      "depends_on": [1],
+      "status": "pending",
+      "retry_limit": 3
+    }
+  ]
+}

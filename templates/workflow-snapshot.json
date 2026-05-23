@@ -1,0 +1,47 @@
+{
+  "_comment": "Template for runtime/snapshots/{wf-id}-step{N}.json — written by runtime, not manually. Shown here for reference.",
+  "schema_version": "1.0",
+  "snapshot_id": "snap_wf_YYYYMMDD_NNN_stepN",
+  "workflow_id": "wf_YYYYMMDD_NNN",
+  "workflow_name": "Workflow Name",
+  "captured_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "step_just_completed": 1,
+  "total_steps": 3,
+  "completed_steps": [
+    {
+      "index": 1,
+      "name": "Step name",
+      "skill": "/skill-name",
+      "status": "COMPLETED",
+      "completed_at": "YYYY-MM-DDTHH:MM:SSZ",
+      "output_path": "path/to/output-file.md",
+      "output_summary": "1-2 sentence description of what was produced",
+      "retry_count": 0
+    }
+  ],
+  "pending_steps": [
+    {
+      "index": 2,
+      "name": "Step name",
+      "skill": "/skill-name",
+      "status": "pending"
+    },
+    {
+      "index": 3,
+      "name": "Step name",
+      "skill": "/skill-name",
+      "status": "pending"
+    }
+  ],
+  "gate_state": {
+    "step": 1,
+    "type": "human_approval",
+    "message": "Gate message shown to operator",
+    "approved": false,
+    "approved_at": null
+  },
+  "inputs_consumed": [
+    "list/of/all/input/files/used/so/far.md"
+  ],
+  "recovery_valid": true
+}

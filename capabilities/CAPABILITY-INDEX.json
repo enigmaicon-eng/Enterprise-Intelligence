@@ -1,0 +1,109 @@
+{
+  "_schema": "P19 Capability Index v1.0",
+  "_note": "Derived from MCP-REGISTRY.json and TOOL-REGISTRY.json. Rebuilt by scripts/capability_index.py. Do not edit manually.",
+  "generated_at": "2026-05-22",
+  "total_capabilities": 36,
+  "by_category": {
+    "design": {
+      "count": 4,
+      "tools": ["figma.get_design_context", "figma.get_screenshot", "figma.use_figma", "figma.generate_diagram"]
+    },
+    "presentation": {
+      "count": 3,
+      "tools": ["gamma.generate", "gamma.generate_from_template", "gamma.read_gamma"]
+    },
+    "communication": {
+      "count": 1,
+      "tools": ["gmail.authenticate"]
+    },
+    "productivity": {
+      "count": 2,
+      "tools": ["gcal.authenticate", "gdrive.authenticate"]
+    },
+    "browser": {
+      "count": 6,
+      "tools": [
+        "playwright.navigate", "playwright.screenshot", "playwright.network_request",
+        "playwright.run_code_unsafe", "playwright.fill_form", "playwright.click"
+      ]
+    },
+    "deployment": {
+      "count": 2,
+      "tools": ["vercel.authenticate", "vercel.complete_authentication"]
+    },
+    "ide": {
+      "count": 2,
+      "tools": ["ide.execute_code", "ide.get_diagnostics"]
+    },
+    "knowledge": {
+      "count": 7,
+      "tools": [
+        "script.knowledge_index", "script.knowledge_search", "script.knowledge_review",
+        "script.knowledge_validate", "script.knowledge_qa_report",
+        "script.memory_index", "script.memory_prune"
+      ]
+    },
+    "execution": {
+      "count": 9,
+      "tools": [
+        "script.db_init", "script.event_store", "script.checkpoint_manager",
+        "script.recovery_engine", "script.artifact_tracker", "script.timeline_viewer",
+        "script.capability_register", "script.capability_index", "script.capability_audit"
+      ]
+    }
+  },
+  "by_permission_class": {
+    "R": {
+      "count": 8,
+      "tools": [
+        "figma.get_design_context", "figma.get_screenshot", "ide.get_diagnostics",
+        "script.knowledge_search", "script.knowledge_review", "script.knowledge_validate",
+        "script.knowledge_qa_report", "script.artifact_tracker", "script.timeline_viewer",
+        "script.capability_audit", "script.memory_prune"
+      ],
+      "gate_required": false
+    },
+    "RW": {
+      "count": 11,
+      "tools": [
+        "figma.use_figma", "figma.generate_diagram", "ide.execute_code",
+        "script.knowledge_index", "script.memory_index", "script.db_init",
+        "script.event_store", "script.checkpoint_manager", "script.recovery_engine",
+        "script.capability_register", "script.capability_index"
+      ],
+      "gate_policy": "Gate on first novel use per session"
+    },
+    "NET": {
+      "count": 12,
+      "tools": [
+        "gamma.generate", "gamma.generate_from_template", "gamma.read_gamma",
+        "gmail.authenticate", "gcal.authenticate", "gdrive.authenticate",
+        "playwright.navigate", "playwright.screenshot", "playwright.network_request",
+        "playwright.run_code_unsafe", "playwright.fill_form", "playwright.click"
+      ],
+      "gate_policy": "Gate on every invocation or operator pre-authorizes session scope"
+    },
+    "DESTR": {
+      "count": 2,
+      "tools": ["vercel.authenticate", "vercel.complete_authentication"],
+      "gate_policy": "Gate on every invocation — no exceptions"
+    }
+  },
+  "search_terms": {
+    "figma": ["figma.get_design_context", "figma.get_screenshot", "figma.use_figma", "figma.generate_diagram"],
+    "design": ["figma.get_design_context", "figma.get_screenshot", "figma.use_figma", "figma.generate_diagram"],
+    "presentation": ["gamma.generate", "gamma.generate_from_template", "gamma.read_gamma"],
+    "slides": ["gamma.generate", "gamma.generate_from_template"],
+    "email": ["gmail.authenticate"],
+    "calendar": ["gcal.authenticate"],
+    "drive": ["gdrive.authenticate"],
+    "browser": ["playwright.navigate", "playwright.screenshot", "playwright.network_request", "playwright.fill_form", "playwright.click"],
+    "screenshot": ["playwright.screenshot", "figma.get_screenshot"],
+    "deploy": ["vercel.authenticate", "vercel.complete_authentication"],
+    "vercel": ["vercel.authenticate", "vercel.complete_authentication"],
+    "code": ["ide.execute_code", "ide.get_diagnostics"],
+    "knowledge": ["script.knowledge_index", "script.knowledge_search", "script.knowledge_review", "script.knowledge_validate", "script.knowledge_qa_report"],
+    "memory": ["script.memory_index", "script.memory_prune"],
+    "execution": ["script.db_init", "script.event_store", "script.checkpoint_manager", "script.recovery_engine", "script.artifact_tracker", "script.timeline_viewer"]
+  }
+}

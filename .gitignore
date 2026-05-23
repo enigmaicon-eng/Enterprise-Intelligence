@@ -1,0 +1,44 @@
+# Claude Code internal state — machine-specific session data
+.claude/projects/
+
+# Runtime state — ephemeral, machine-specific
+runtime/state/
+runtime/events/
+runtime/snapshots/
+
+# Telemetry and API logs — may contain sensitive data
+telemetry/
+
+# Capability invocation logs — operational data
+capabilities/INVOCATION-LOG.jsonl
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+scripts/__pycache__/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor artifacts
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Environment files — never commit
+.env
+.env.local
+.env.*.local
+*.env
+
+# Secrets and credentials
+*.key
+*.pem
+credentials.json
+token.json

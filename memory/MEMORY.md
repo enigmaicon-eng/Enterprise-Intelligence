@@ -1,0 +1,28 @@
+# Memory Index
+
+- [User Profile](user_profile.md) — Owner of enterprise AI workspace; PM-domain expert building a knowledge compounding system
+- [Project: Workspace Blueprint](project_workspace_blueprint.md) — Phase 3 (Autonomous Orchestration) complete as of 2026-05-21
+- [Context Engineering System](context_engineering_system.md) — P8 complete 2026-05-22; 14-subsystem CE system with 6 architecture docs, 2 skills, full diagnostics
+- [Production AI Learning System](production_ai_learning.md) — P9 complete 2026-05-22; 18-domain system, 8 knowledge entries, 3 skills, 3 playbooks
+- [Cognitive Acceleration System](cognitive_acceleration_system.md) — P10 complete 2026-05-22; error-signal-based compounding, 6 skills, 5 knowledge entries
+- [Daily Operating System](daily_os.md) — P11 complete 2026-05-22; 4 skills (/plan /focus /prep /shutdown), minimum viable daily ritual stack
+- [Final Review](final_review.md) — P12 complete 2026-05-22; CLAUDE.md trimmed; WORKSPACE-GUIDE.md created; 10 operating rules
+- [Bounded Autonomous Runtime](bounded_runtime.md) — P13 complete 2026-05-22; file-based stateful runtime with 4 skills, 2 arch docs, runtime/ state infrastructure
+- [Dynamic Invocation System](dynamic_invocation.md) — P14 complete 2026-05-22; /skill-invoke /skill-deps /skill-gaps retired (SR-2); active: /skill-lookup /skill-new; capability taxonomy in SKILL-SYSTEM.md
+- [Persistent Execution System](persistent_execution.md) — P15 complete 2026-05-22; ELIMINATED 2026-05-23 (SR-1): 4 exec-* skills retired, 6 Python scripts deleted, SQLite layer removed; file-based runtime (P13) is sole persistence layer
+- [Memory Continuity System](memory_continuity.md) — P16 complete 2026-05-22; 4-layer memstack, 7 typed memory dirs, retrieval index, lifecycle rules, 6 skills (/mem-capture /mem-recall /mem-adr /mem-failure /mem-reconstruct /mem-hygiene), 6 templates
+- [Knowledge Compounding System](knowledge_compounding.md) — P17 complete 2026-05-22; KNOWLEDGE-GRAPH.json, 3 Python scripts (index/search/review), 5 skills (/recall upgraded, /knowledge-connect /knowledge-cluster /knowledge-review /knowledge-graph), cluster-synthesis template
+- [Knowledge QA System](knowledge_qa.md) — P18 complete 2026-05-22; 0–90 quality scoring, 5 calibration flags, 2 Python scripts (validate/qa_report), 2 skills (/knowledge-validate /knowledge-qa), dead link detection, missed connection candidates
+- [MCP + Tool Capability Layer](mcp_capability_layer.md) — P19 complete 2026-05-23; 4-class permission model (R/RW/NET/DESTR), 8 platform MCPs registered, 36 tools indexed, 3 scripts, 4 skills (/mcp-register /mcp-status /capability-search /capability-audit), G-rules governance, onboarding playbook
+- [Final Autonomy Simplification](final_simplification_review.md) — P20 + SR-1 + SR-5 complete 2026-05-23; eliminated SQLite layer; merged 11 arch docs → 4 (OPERATIONAL-ROUTING, SKILL-SYSTEM, CONTEXT-SYSTEM, RUNTIME-SYSTEM); 10 anti-complexity rules (AC-1–AC-10); workspace is now a skill library with file-based memory and operator-gated workflows — nothing more
+- [Trace Capture System](trace_capture_system.md) — P21 complete 2026-05-23; 5 skills (/trace-capture /workflow-journal /trace-recall /trace-search /pattern-mine), 3 templates, traces/ directory with TRACE-INDEX.md; personal operational memory compounding for one operator
+- [Observability System](observability_system.md) — P22 complete 2026-05-23; 5 skills (/ops-dashboard /exec-inspect /skill-stats /failure-review /retrieval-diag), 1 arch doc; runtime visibility and execution introspection without enterprise overhead
+- [Decision Intelligence System](decision_intelligence.md) — P23 complete 2026-05-23; 4 skills (/pre-decide /decision-recall /decision-due /consequence-map), 1 arch doc; pre-decision analysis, recall, review queue, consequence mapping
+- [Strategic Intelligence System](strategic_intelligence.md) — P24 complete 2026-05-23; 3 skills (/signal /assumption-register /competitive-radar); intelligence gathering layer between horizon scans; signals, bet assumptions, competitor moves
+- [Knowledge Synthesis Engine](knowledge_synthesis.md) — P25 complete 2026-05-23; 3 skills (/analogy /contradiction-register /knowledge-gap); analogical reasoning, contradiction management, proactive gap analysis — extends P17 knowledge compounding
+- [Personal Learning Analytics](personal_learning_analytics.md) — P26 complete 2026-05-23; 3 skills (/learning-velocity /learning-source /knowledge-utilization); acquisition rate, source attribution, utilization funnel — analytics feedback layer on knowledge compounding
+- [Execution Intelligence System](execution_intelligence.md) — P27 complete 2026-05-23; 3 skills (/exec-throughput /exec-allocation /exec-friction); throughput trends, work-type distribution, friction analysis — analytics layer on execution trace infrastructure
+- [Runtime Hardening System](runtime_hardening.md) — P28 complete 2026-05-23; 3 skills (/runtime-validate /snapshot-verify /reliability-check); proactive validation, snapshot integrity, cross-layer consistency — hardening layer on bounded runtime
+- [Cognitive Load Management](cognitive_load_management.md) — P29 complete 2026-05-23; 3 skills (/open-loops /cognitive-load /attention-debt); open loop inventory, aggregate load scoring, strategic attention alignment
+- [Workspace Audit System](workspace_audit.md) — P30 complete 2026-05-23; 3 skills (/workspace-audit /skill-overlap /simplify); repeatable constraint compliance audit, pairwise overlap scoring, prioritized simplification planning
+- [Final Cognitive Runtime Review](final_cognitive_runtime_review.md) — P31 authoritative audit; 145 skills/56 arch docs vs ceilings; 5-phase simplification roadmap; 10 rule sets supersede all prior governance

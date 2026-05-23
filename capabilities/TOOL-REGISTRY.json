@@ -1,0 +1,372 @@
+{
+  "_schema": "P19 Tool Registry v1.0",
+  "_note": "Individual tool capabilities from all registered MCP servers and workspace scripts. Rebuilt by scripts/capability_index.py. Do not edit manually.",
+  "generated_at": "2026-05-22",
+  "stats": {
+    "total_tools": 36,
+    "by_class": { "R": 8, "RW": 14, "NET": 11, "DESTR": 3 },
+    "by_category": { "design": 4, "presentation": 3, "communication": 3, "productivity": 4, "browser": 6, "deployment": 2, "ide": 2, "knowledge": 6, "execution": 6 }
+  },
+  "tools": [
+    {
+      "id": "figma.get_design_context",
+      "name": "Get Figma Design Context",
+      "source_server": "claude_ai_figma",
+      "category": "design",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Read design context, components, and layout from a Figma file",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "figma.get_screenshot",
+      "name": "Get Figma Screenshot",
+      "source_server": "claude_ai_figma",
+      "category": "design",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Capture a screenshot of a Figma frame or component",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "figma.use_figma",
+      "name": "Write to Figma",
+      "source_server": "claude_ai_figma",
+      "category": "design",
+      "permission_class": "RW",
+      "requires_gate": true,
+      "description": "Write designs, components, or layouts into a Figma file",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "figma.generate_diagram",
+      "name": "Generate Figma Diagram",
+      "source_server": "claude_ai_figma",
+      "category": "design",
+      "permission_class": "RW",
+      "requires_gate": true,
+      "description": "Generate a diagram or FigJam content in Figma",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "gamma.generate",
+      "name": "Generate Gamma Presentation",
+      "source_server": "claude_ai_gamma",
+      "category": "presentation",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Create an AI-powered presentation via Gamma cloud",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "gamma.generate_from_template",
+      "name": "Generate from Gamma Template",
+      "source_server": "claude_ai_gamma",
+      "category": "presentation",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Create presentation using an existing Gamma template",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "gamma.read_gamma",
+      "name": "Read Gamma Content",
+      "source_server": "claude_ai_gamma",
+      "category": "presentation",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Read content of an existing Gamma presentation",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "gmail.authenticate",
+      "name": "Gmail Authentication",
+      "source_server": "claude_ai_gmail",
+      "category": "communication",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Authenticate with Gmail. Required before reading or sending email.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "gcal.authenticate",
+      "name": "Google Calendar Authentication",
+      "source_server": "claude_ai_google_calendar",
+      "category": "productivity",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Authenticate with Google Calendar for read/write access.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "gdrive.authenticate",
+      "name": "Google Drive Authentication",
+      "source_server": "claude_ai_google_drive",
+      "category": "productivity",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Authenticate with Google Drive for file access.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "ide.execute_code",
+      "name": "Execute Code in IDE",
+      "source_server": "ide",
+      "category": "ide",
+      "permission_class": "RW",
+      "requires_gate": true,
+      "description": "Execute code in the connected IDE (VS Code / JetBrains).",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "ide.get_diagnostics",
+      "name": "Get IDE Diagnostics",
+      "source_server": "ide",
+      "category": "ide",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Read linting errors, type errors, and diagnostics from the IDE.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "playwright.navigate",
+      "name": "Browser Navigate",
+      "source_server": "plugin_playwright",
+      "category": "browser",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Navigate the browser to a URL.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "playwright.screenshot",
+      "name": "Browser Screenshot",
+      "source_server": "plugin_playwright",
+      "category": "browser",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Take a screenshot of the current browser view.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "playwright.network_request",
+      "name": "Browser Network Request",
+      "source_server": "plugin_playwright",
+      "category": "browser",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Make a network request via the browser context.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "playwright.run_code_unsafe",
+      "name": "Browser Run Code (Unsafe)",
+      "source_server": "plugin_playwright",
+      "category": "browser",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Execute arbitrary JavaScript in the browser page context. Elevated risk.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "playwright.fill_form",
+      "name": "Browser Fill Form",
+      "source_server": "plugin_playwright",
+      "category": "browser",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Fill and submit a form in the browser. May trigger server-side actions.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "playwright.click",
+      "name": "Browser Click",
+      "source_server": "plugin_playwright",
+      "category": "browser",
+      "permission_class": "NET",
+      "requires_gate": true,
+      "description": "Click a page element. May trigger navigation or form submission.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "vercel.authenticate",
+      "name": "Vercel Authentication",
+      "source_server": "plugin_vercel",
+      "category": "deployment",
+      "permission_class": "DESTR",
+      "requires_gate": true,
+      "description": "Authenticate with Vercel. Prerequisite for all deployment operations.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "vercel.complete_authentication",
+      "name": "Vercel Auth Completion",
+      "source_server": "plugin_vercel",
+      "category": "deployment",
+      "permission_class": "DESTR",
+      "requires_gate": true,
+      "description": "Complete Vercel authentication flow.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.knowledge_index",
+      "name": "Rebuild Knowledge Index",
+      "source_server": "workspace_scripts",
+      "category": "knowledge",
+      "permission_class": "RW",
+      "requires_gate": false,
+      "description": "Rebuild KNOWLEDGE-GRAPH.json from all knowledge entries.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.knowledge_search",
+      "name": "Knowledge Search",
+      "source_server": "workspace_scripts",
+      "category": "knowledge",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Scored retrieval from KNOWLEDGE-GRAPH.json. Tracks access_count.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.knowledge_review",
+      "name": "Knowledge Review Schedule",
+      "source_server": "workspace_scripts",
+      "category": "knowledge",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Surface overdue knowledge entries by spaced repetition schedule.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.knowledge_validate",
+      "name": "Knowledge Validator",
+      "source_server": "workspace_scripts",
+      "category": "knowledge",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Validate entry structural quality, confidence calibration, and graph integrity.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.knowledge_qa_report",
+      "name": "Knowledge QA Report",
+      "source_server": "workspace_scripts",
+      "category": "knowledge",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Aggregate QA report: domain coverage, band distribution, calibration, dead links.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.memory_index",
+      "name": "Memory Index Builder",
+      "source_server": "workspace_scripts",
+      "category": "knowledge",
+      "permission_class": "RW",
+      "requires_gate": false,
+      "description": "Scan 7 typed memory directories and rebuild RETRIEVAL-INDEX.json.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.db_init",
+      "name": "Database Initializer",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "RW",
+      "requires_gate": false,
+      "description": "Initialize or verify the SQLite execution persistence database.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.event_store",
+      "name": "Event Store",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "RW",
+      "requires_gate": false,
+      "description": "Append and query workflow events in the SQLite event store.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.checkpoint_manager",
+      "name": "Checkpoint Manager",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "RW",
+      "requires_gate": false,
+      "description": "Take, list, validate, and restore execution checkpoints.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.recovery_engine",
+      "name": "Recovery Engine",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "RW",
+      "requires_gate": true,
+      "description": "Detect interrupted workflows, classify failures, generate recovery options.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.artifact_tracker",
+      "name": "Artifact Tracker",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Register, verify, and list workflow output artifacts with hash validation.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.timeline_viewer",
+      "name": "Timeline Viewer",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "View execution timeline and operational journal from SQLite.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.capability_register",
+      "name": "Capability Register",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "RW",
+      "requires_gate": true,
+      "description": "Register, suspend, reactivate, and retire MCP capabilities.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.capability_index",
+      "name": "Capability Index Builder",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "RW",
+      "requires_gate": false,
+      "description": "Rebuild CAPABILITY-INDEX.json from MCP and tool registries.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.capability_audit",
+      "name": "Capability Audit",
+      "source_server": "workspace_scripts",
+      "category": "execution",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Read and analyze INVOCATION-LOG.jsonl for usage stats and anomalies.",
+      "registered_at": "2026-05-22"
+    },
+    {
+      "id": "script.memory_prune",
+      "name": "Memory Prune",
+      "source_server": "workspace_scripts",
+      "category": "knowledge",
+      "permission_class": "R",
+      "requires_gate": false,
+      "description": "Generate prune manifests for memory entries by decay thresholds. Never auto-deletes.",
+      "registered_at": "2026-05-22"
+    }
+  ]
+}
