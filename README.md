@@ -1,181 +1,411 @@
 # Enterprise Intelligence Workspace
 
-A persistent cognitive operating environment for one operator — built for elite knowledge work across product strategy, execution, learning, and operational intelligence.
+A persistent cognitive execution environment designed for long-horizon thinking, operational continuity, and high-leverage AI workflows.
 
 ---
 
-## What This Is
+# Why I Built This
 
-A structured, file-based workspace that runs inside [Claude Code](https://claude.ai/code). Every session starts with context, every output feeds forward, and every skill is a named, invokable behavior. The system compounds — knowledge connects to knowledge, decisions reference past decisions, execution traces reveal patterns.
+Over time, I noticed the same problem with almost every AI workflow I used:
 
-**It is three things:**
-1. **A skill library** — 124 named commands covering PM work, strategy, execution, knowledge management, cognitive tools, observability, and workspace audit
-2. **A file-based operational memory** — structured markdown encoding decisions, knowledge, traces, strategies, and system state across sessions
-3. **A governed external tool interface** — MCP capability layer with a 4-class permission model for Figma, Gmail, Google Calendar, Vercel, Playwright, and more
+The issue usually wasn’t the model.
 
-**It is not** an autonomous agent, enterprise AI infrastructure, or a multi-agent system. One operator. One session. Everything human-gated.
+It was continuity.
+
+Good ideas would disappear between sessions.  
+Reasoning would fragment across tools.  
+Useful workflows had to be rebuilt repeatedly.  
+Context constantly reset.
+
+I kept feeling like I was rebuilding my thinking every day instead of compounding it.
+
+So this project started as a personal attempt to solve that problem.
+
+Not by creating “more agents” or chasing AGI-style automation, but by building a workspace that could:
+
+- preserve execution context
+- retain operational memory
+- codify successful workflows
+- improve retrieval quality
+- support long-horizon thinking
+- reduce cognitive friction
+
+Over time, that evolved into Enterprise Intelligence Workspace.
 
 ---
 
-## Quick Start
+# What This Actually Is
+
+Enterprise Intelligence Workspace is a bounded cognitive runtime for a single operator.
+
+It combines:
+
+- persistent memory systems
+- execution continuity
+- procedural workflows
+- context engineering
+- operational recall
+- PM operating systems
+- bounded autonomy
+- lightweight orchestration
+
+The goal is simple:
+
+> Build an environment that remembers how you think and work.
+
+---
+
+# Who This Is For
+
+This workspace is designed for people who spend most of their day thinking, synthesizing, planning, debugging, prioritizing, or coordinating complex work.
+
+Especially:
+
+- Product Managers
+- AI PMs
+- Technical PMs
+- AI-native operators
+- Builders
+- Strategists
+- Engineers
+- Founders
+- Systems thinkers
+- Researchers
+- Knowledge workers
+
+If you constantly feel like:
+- context gets lost
+- workflows reset too often
+- useful reasoning disappears
+- AI outputs don’t compound over time
+- execution becomes fragmented across tools
+
+this workspace is designed to reduce that friction.
+
+---
+
+# Why Someone Would Use This
+
+Most AI tooling today optimizes for:
+- faster outputs
+- more agents
+- more automation
+- larger orchestration systems
+
+This workspace optimizes for something different:
+
+- continuity
+- memory
+- execution quality
+- operational recall
+- procedural workflows
+- retrieval quality
+- long-term cognition
+
+The objective is not:
+“replace the human.”
+
+The objective is:
+help one operator think and execute with significantly less friction over time.
+
+This workspace helps create:
+- reusable execution patterns
+- persistent operational memory
+- retrieval-enhanced workflows
+- codified thinking systems
+- long-horizon execution continuity
+
+---
+
+# What This Is NOT
+
+This project intentionally avoids becoming:
+
+- an AGI platform
+- an enterprise orchestration system
+- a multi-agent swarm architecture
+- a recursive autonomous runtime
+- an “AI employee” platform
+- infrastructure maximalism
+
+The focus is operational leverage, not autonomy theater.
+
+---
+
+# Core Principles
+
+## 1. Continuity > Complexity
+
+The biggest bottleneck in AI workflows is often context loss, not model capability.
+
+This workspace prioritizes continuity:
+- memory
+- retrieval
+- execution persistence
+- reusable workflows
+
+over excessive orchestration.
+
+---
+
+## 2. Bounded Autonomy
+
+Autonomy should remain:
+- observable
+- reviewable
+- maintainable
+- human-centered
+
+The system is designed to assist execution, not replace judgment.
+
+---
+
+## 3. Procedural Memory Matters
+
+Repeated successful workflows should become reusable operational patterns.
+
+Over time, cognition should compound instead of reset.
+
+---
+
+## 4. Simplicity is a Feature
+
+The system intentionally avoids:
+- unnecessary abstractions
+- orchestration sprawl
+- excessive agent layers
+- enterprise-scale infrastructure
+
+The goal is sustainable operational intelligence.
+
+---
+
+# Core Architecture
+
+## Cognitive Runtime
+Persistent execution environment for maintaining operational continuity.
+
+## Memory Systems
+Includes:
+- working memory
+- episodic memory
+- semantic memory
+- procedural memory
+
+## Execution Systems
+Supports:
+- workflow continuity
+- bounded orchestration
+- resumable execution
+- operational recall
+
+## PM Operating Systems
+Codified frameworks for:
+- prioritization
+- planning
+- synthesis
+- execution
+- strategic thinking
+
+## Context Engineering
+Improves:
+- retrieval quality
+- memory relevance
+- execution consistency
+- long-context usability
+
+---
+
+# Key Capabilities
+
+- Persistent execution memory
+- Workflow journaling
+- Procedural skill codification
+- Context-aware retrieval
+- Operational trace capture
+- PM workflow systems
+- Execution continuity
+- Memory-enhanced workflows
+- Bounded skill invocation
+- Lightweight runtime orchestration
+- Retrieval-enhanced cognition
+
+---
+
+# Repository Structure
 
 ```bash
-# In Claude Code, type any slash command:
-/briefing          # start your day
-/plan              # set today's theme + top 3 commitments  
-/cognitive-load    # is it safe to do deep work?
-/pm-prd            # generate a PRD
-/workspace-audit   # check workspace health
+memory/
+runtime/
+skills/
+procedures/
+workflows/
+observability/
+context/
+pm-strategy/
+execution/
+retrieval/
 ```
 
 ---
 
-## Skill Catalog (124 skills)
+# Getting Started
 
-### Daily Operations
-`/briefing` `/plan` `/focus` `/prep` `/shutdown` `/weekly`
+## 1. Clone The Repository
 
-### Cognitive Load
-`/open-loops` `/cognitive-load` `/attention-debt`
-
-### Capture & Synthesis
-`/capture` `/debrief` `/promote` `/decide` `/observe` `/synthesize`
-
-### Knowledge
-`/learn` `/recall` `/pattern` `/repo-learn` `/analogy` `/contradiction-register` `/knowledge-gap` `/learning-velocity` `/learning-source` `/knowledge-utilization` `/knowledge-connect` `/knowledge-cluster` `/knowledge-graph` `/knowledge-qa` `/recall-test` `/misconception`
-
-### Strategy
-`/bet` `/horizon` `/strategy-review` `/strategy-posture` `/signal` `/assumption-register` `/competitive-radar`
-
-### Execution
-`/exec-plan` `/exec-prioritize` `/exec-checkpoint` `/exec-decompose` `/exec-review` `/exec-risk` `/exec-throughput` `/exec-allocation` `/exec-friction`
-
-### Trace & Recall
-`/trace-capture` `/workflow-journal` `/trace-recall` `/trace-search` `/pattern-mine`
-
-### Cognitive
-`/think` `/insight`
-
-### Decision Intelligence
-`/pre-decide` `/decision-recall` `/decision-due` `/consequence-map`
-
-### Runtime
-`/runtime-start` `/runtime-resume` `/runtime-status` `/runtime-recover`
-
-### Runtime Hardening
-`/runtime-validate` `/snapshot-verify` `/reliability-check`
-
-### Observability
-`/ops-dashboard` `/exec-inspect` `/skill-stats` `/failure-review` `/retrieval-diag` `/debug-ai`
-
-### Tool Access (MCP)
-`/mcp-register` `/mcp-status` `/capability-search` `/capability-audit`
-
-### Skill Management
-`/skill-lookup` `/skill-new`
-
-### Workspace Audit
-`/workspace-audit` `/skill-overlap` `/simplify`
-
-### PM Work (44 skills)
-`/pm-strategy` `/pm-discovery` `/pm-prioritize` `/pm-exec-brief` `/pm-rca` `/pm-launch` `/pm-prd` `/pm-story` `/pm-okr` `/pm-competitive` `/pm-experiment` `/pm-status` `/pm-roadmap` `/pm-gtm` `/pm-retro` `/pm-metric-design` `/pm-opportunity` `/pm-stakeholders` `/pm-design-brief` `/pm-anomaly` `/pm-vision` `/pm-user-interview` `/pm-agenda` `/pm-deps` `/pm-tech-debt` `/pm-incident` `/pm-positioning` `/pm-growth` `/pm-sprint` `/pm-market-sizing` `/pm-wireframe` `/pm-prototype` `/pm-fdpm` `/pm-ml` `/pm-press-release` `/pm-zero-to-one` `/pm-pricing` `/pm-privacy` `/pm-influence` `/pm-teardown` `/pm-beta` `/pm-design-critique` `/pm-rollout` `/pm-analytics`
-
----
-
-## Directory Structure
-
-```
-.
-├── CLAUDE.md                    # Behavioral rules + routing table
-├── .claude/commands/            # 124 skill files (loaded by Claude Code)
-├── architecture/                # 25 reference docs + archive/
-├── memory/                      # Orientation facts across sessions
-├── knowledge/                   # Permanent knowledge entries by domain
-├── strategy/                    # Active bets, OKRs, signals
-├── traces/                      # Execution trace history + TRACE-INDEX.md
-├── runtime/                     # Workflow state (JSON, atomic writes)
-├── execution/                   # Action items, initiatives, risks
-├── decision-frameworks/         # Decisions log + PM frameworks
-├── notes/                       # Raw captures + structured notes
-├── meeting-intelligence/        # Raw + processed meeting files
-├── synthesis/                   # Cross-domain synthesis memos
-├── prompts/                     # System prompts + workflow prompts
-├── templates/                   # Skill and document templates
-├── playbooks/                   # Multi-skill orchestration guides
-├── workflows/                   # PM workflow definitions
-├── scripts/                     # Python utilities (knowledge index, etc.)
-├── capabilities/                # MCP registry + tool registry
-└── skills/README.md             # Canonical skill registry
+```bash
+git clone https://github.com/enigmaicon-eng/Enterprise-Intelligence.git
+cd Enterprise-Intelligence
 ```
 
 ---
 
-## Architecture
+## 2. Open In VS Code
 
-The workspace was built across 30 phases (P1–P30) and audited in P31 (Final Cognitive Runtime Review). Key architectural constraints:
-
-| Constraint | Ceiling | Current |
-|-----------|---------|---------|
-| Skills | 120 | 124 |
-| Architecture docs | 25 | 25 |
-| Memory files | 30 | 22 |
-| MEMORY.md lines | 200 | 28 |
-| Daily ritual stack | 6 | 6 |
-
-**Core architectural documents:**
-- `architecture/FINAL-COGNITIVE-RUNTIME-REVIEW.md` — authoritative review + 70 governance rules
-- `architecture/FINAL-SIMPLIFICATION-REVIEW.md` — P20 anti-complexity rules (AC-1 through AC-10)
-- `architecture/FINAL-OPERATING-RULES.md` — 10 permanent operating rules
-- `architecture/RUNTIME-SYSTEM.md` — file-based gated runtime
-- `architecture/WORKSPACE-GUIDE.md` — navigation reference
+```bash
+code .
+```
 
 ---
 
-## Operational Constraints
+## 3. Start Claude Code
 
-The workspace runs under hard limits enforced by `/workspace-audit`:
+Inside the project directory:
 
-- **No dual persistence** — runtime state in JSON files only (no database)
-- **Human gate before every step** — nothing executes without explicit operator approval
-- **One workflow in RUNNING state** — hard system invariant
-- **Skill ceiling at 120** — every new skill requires retiring an existing one
-- **Architecture docs ceiling at 25** — every new doc requires archiving an existing one
-- **Skill ceiling growth requires retirement** — not accumulation
+```bash
+claude
+```
 
 ---
 
-## MCP Integrations
+## 4. Review The Core Documents
 
-| Server | Permission Class | Scope |
-|--------|----------------|-------|
-| Figma | RW | Design, mockups, UI, FigJam |
-| Gamma | NET | Presentations, documents |
-| Gmail | NET/DESTR | Email |
-| Google Calendar | NET | Scheduling |
-| Google Drive | NET | Cloud files |
-| Playwright | NET | Browser automation |
-| Vercel | DESTR | Deployment, CI/CD |
-| IDE | RW | Code execution, diagnostics |
+Start with:
 
----
+```bash
+README.md
+START-HERE.md
+DAILY-OPERATING-SYSTEM.md
+CONTEXT-ENGINEERING-SYSTEM.md
+PM-OPERATING-SYSTEM.md
+```
 
-## Governance
-
-10 rule sets govern the workspace (70 rules total). Defined in `architecture/FINAL-COGNITIVE-RUNTIME-REVIEW.md`:
-
-1. Non-Negotiable Architectural Rules (NAR-1 through NAR-7)
-2. Anti-Drift Rules (ADR-1 through ADR-6)
-3. Maximum Complexity Limits
-4. Operational Simplicity Rules (OSR-1 through OSR-6)
-5. Bounded Autonomy Rules (BAR-1 through BAR-10)
-6. Memory Hygiene Rules (MHR-1 through MHR-7)
-7. Retrieval Quality Rules (RQR-1 through RQR-6)
-8. Skill Creation Constraints (SCC-1 through SCC-7)
-9. Orchestration Constraints (OCR-1 through OCR-8)
-10. Long-Term Maintenance Rules (LMR-1 through LMR-10)
+These documents explain:
+- architecture
+- workflows
+- memory systems
+- operational conventions
+- bounded autonomy rules
+- runtime philosophy
 
 ---
 
-## License
+## 5. Use The Workspace Operationally
 
-MIT — see [LICENSE](LICENSE)
+The workspace is designed to support:
+- PM workflows
+- strategic planning
+- prioritization
+- architecture reviews
+- synthesis
+- debugging
+- operational memory
+- retrieval-enhanced execution
+- long-horizon execution continuity
+
+---
+
+# Recommended Usage Pattern
+
+The highest leverage comes from:
+
+1. Using the workspace daily
+2. Capturing execution traces
+3. Codifying reusable workflows
+4. Improving retrieval quality
+5. Refining procedural memory
+6. Reducing cognitive friction over time
+
+This is intended to become:
+- a second brain
+- a cognitive execution layer
+- an operational intelligence environment
+
+not just a prompt library.
+
+---
+
+# Philosophy
+
+Most AI systems optimize for:
+- more agents
+- more orchestration
+- more automation
+
+This project optimizes for:
+- better continuity
+- better retrieval
+- better execution
+- better memory
+- better operational leverage
+
+The objective is not autonomous intelligence.
+
+It is sustained cognitive effectiveness.
+
+---
+
+# Current Focus
+
+The workspace is now primarily focused on:
+
+- operational refinement
+- retrieval quality
+- procedural memory
+- workflow ergonomics
+- execution continuity
+- long-term maintainability
+
+Rather than expanding into larger orchestration systems.
+
+---
+
+# Future Direction
+
+Future improvements will focus on:
+- improving memory quality
+- better workflow codification
+- stronger retrieval systems
+- operational observability
+- procedural refinement
+- runtime ergonomics
+
+Not enterprise-scale autonomy.
+
+---
+
+# MIT License
+
+This project is licensed under the MIT License.
+
+You are free to:
+- use
+- modify
+- distribute
+- adapt
+
+with attribution under the terms of the MIT license.
+
+See the LICENSE file for details.
+
+---
+
+# Final Thought
+
+The biggest shift while building this project was realizing:
+
+The future of AI workflows probably isn’t bigger agent systems.
+
+It’s environments that reduce the friction of losing context.
+
+That changes how people think, execute, and compound knowledge over time.
